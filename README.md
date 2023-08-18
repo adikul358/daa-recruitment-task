@@ -1,7 +1,5 @@
 # API Documentation
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/75124f8f-aa7c-4e97-82b1-c1896ddb7c3a/deploy-status)](https://app.netlify.com/sites/adikul-daa/deploys)
-
 This is a REST API that utilises the `GET`, `POST`, `PATCH`, and `DELETE` http methods to make a CRUD API with MongoDB. The content type is simple and is as follows:
 
 ```typescript
