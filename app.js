@@ -1,5 +1,4 @@
 import express from "express"
-import createError from "http-errors"
 import cookieParser from "cookie-parser"
 import logger from "morgan"
 
@@ -18,11 +17,6 @@ redirectRouter.get("/", (req,res) => res.send("For documentation, https://github
 app.use("/", redirectRouter)
 
 app.use("/api", apiRouter)
-
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404))
-})
 
 // error handler
 app.use(function(err, req, res, next) {
