@@ -1,6 +1,6 @@
 # API Documentation
 
-This is a REST API that utilises the `GET`, `POST`, `PATCH`, and `DELETE` http methods to make a CRUD API with MongoDB. The content type is simple and is as follows:
+This is a REST API that utilises the `GET`, `POST`, `PATCH`, and `DELETE` HTTP methods to make a CRUD API with MongoDB. The content type is simple and as follows:
 
 ```typescript
 type DataObject = {
@@ -23,7 +23,7 @@ The IDs are unique and automatically generated.
 ### `POST` /api
 
 `HTTP 201` Adds the object(s)
-If multiple objects need to be added, submit the JSON body as follows: 
+If multiple objects need to be added, submit the JSON body as follows:
 
 ```typescript
 [
@@ -36,7 +36,7 @@ If multiple objects need to be added, submit the JSON body as follows:
 ### `PATCH` /api/\[id]
 
 `HTTP 200` Updates the object
-Submit the JSON body as follows: 
+Submit the JSON body as follows:
 
 ```typescript
 {
@@ -47,7 +47,7 @@ Submit the JSON body as follows:
 ### `PATCH` /api
 
 `HTTP 200` Updates the objects
-For multiple objects, submit the JSON body as follows: 
+For multiple objects, submit the JSON body as follows:
 
 ```typescript
 [
@@ -66,7 +66,7 @@ For multiple objects, submit the JSON body as follows:
 ### `DELETE` /api
 
 `HTTP 200` Deletes the objects
-For multiple objects, submit the JSON body as follows: 
+For multiple objects, submit the JSON body as follows:
 
 ```typescript
 [
