@@ -4,7 +4,7 @@ This is a REST API that utilises the `GET`, `POST`, `PATCH`, and `DELETE` http m
 
 ```typescript
 type DataObject = {
-  id: integer,
+  _id: string,
   name: string,
   quantity: integer
 }
@@ -26,9 +26,11 @@ The IDs are unique and automatically generated.
 If multiple objects need to be added, submit the JSON body as follows: 
 
 ```typescript
-{
-  objects: [...]
-}
+[
+  {...},
+  {...},
+  ...
+]
 ```
 
 ### `PATCH` /api/\[id]
@@ -48,13 +50,13 @@ Submit the JSON body as follows:
 For multiple objects, submit the JSON body as follows: 
 
 ```typescript
-{
-  objects: [{
-    id: id,
+[
+  {
+    _id: id,
     [attribute_to_update]: updated_value
-    ...
-  }, ...]
-}
+  }, 
+  ...
+]
 ```
 
 ### `DELETE` /api/\[id]
@@ -67,7 +69,7 @@ For multiple objects, submit the JSON body as follows:
 For multiple objects, submit the JSON body as follows: 
 
 ```typescript
-{
-  objects: [id_1, id_2, ...]
-}
+[
+  id_1, id_2, ...
+]
 ```
